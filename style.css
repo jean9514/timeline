@@ -1,3 +1,4 @@
+/* SVG */
 .cls-1,
 .cls-10,
 .cls-11,
@@ -52,7 +53,7 @@
 }
 
 .cls-2 {
-  fill: #f4d9ec;
+  position: absolute;
 }
 
 .cls-2,
@@ -60,19 +61,21 @@
 .cls-5 {
   stroke-width: 4px;
 }
-
+/* baggrundsfarve på overskriftsboxen */
 .cls-3 {
+  cursor: pointer;
+  z-index: 100;
   fill: #d4d4d4;
 }
 
 .cls-4 {
   stroke-width: 3.4px;
 }
-
+/* baggrundsfarven på infoboxen */
 .cls-5 {
-  fill: #f1d8eb;
+  fill: #708C64;
 }
-
+/* connetionlinen */
 .cls-6 {
   stroke-width: 3.78px;
 }
@@ -104,59 +107,80 @@
 .cls-13 {
   stroke-width: 3.98px;
 }
-
+/* vertical timeline */
 .cls-14 {
   stroke: #2f0d00;
   stroke-width: 9px;
 }
-
+/* bullets på timeline */
 .cls-15 {
   fill: #f8f5f6;
   stroke-width: 2.03px;
 }
-
+/* overskriften, font, size og stroke  */
 .cls-16 {
   font-size: 18.29px;
-  fill: #2f0d00;
+  fill: #f8f5f6;
   font-family: MyriadPro-Regular, Myriad Pro;
 }
+
 
 .hidden {
   display: none;
 }
 
-.cls-2 {
-  position: absolute;
+/* HTML */
+h1 {
+  font-size: 1.5em;
 }
 
 .svgplaceholder {
   position: absolute;
+  margin-top: -3.5vw;
+  margin-left: 1vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "title-container title-container title-container title-container" "image-container image-container director-container director-container" "image-container image-container year-container year-container";
+
+  display: inline-block;
+  padding: 2vw;
+  padding-bottom: 8vw;
+  cursor: pointer;
+
 }
 
 .svgplaceholder img {
-  width: 30%;
+  width: 25%;
   margin: 5%;
 }
 
-.svgplaceholder {
-  margin-top: -1vw;
-  margin-left: 1vw;
-  display: grid;
+/* her skjuler vi indholdet af vores infobox */
+.svgplaceholder .link-container,
+.svgplaceholder .billede-container,
+.svgplaceholder .langbeskrivelse-container {
+  visibility: hidden;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
 }
 
+/* her vises indholdet af vores infoboxe */
+.svgplaceholder:hover .link-container,
+.svgplaceholder:hover .billede-container,
+.svgplaceholder .langbeskrivelse-container {
+  visibility: visible;
+ 
+}
+
+/*  */
 @media screen and (min-width: 580px) {
   .svgplaceholder {
     grid-gap: 4px;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, 2fr);
   }
-}
-
-.svgplaceholder {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "title-container title-container title-container title-container" "image-container image-container director-container director-container" "image-container image-container year-container year-container";
 }
 
 .title-container {
@@ -167,6 +191,13 @@
   grid-area: image-container;
 }
 
+/* .billede-container img{
+  margin-right: 100px;
+} */
+/* .kortbeskrivelse-container {
+  grid-area: director-container;
+} */
+
 .langbeskrivelse-container {
   grid-area: director-container;
 }
@@ -174,38 +205,4 @@
 .link-container {
   grid-area: year-container;
 }
-
-.cls-3 {
-  cursor: pointer;
-  z-index: 100;
-  border: 10px solid pink;
-}
-
-h1 {
-  font-size: 1.5em;
-}
-
-.svgplaceholder {
-  display: inline-block;
-  padding: 2vw;
-  padding-bottom: 8vw;
-  cursor: pointer;
-}
-
-.svgplaceholder .link-container,
-.svgplaceholder .billede-container {
-  visibility: hidden;
- 
-  color: #fff;
-  text-align: center;
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 1;
-}
-
-.svgplaceholder:hover .link-container,
-.svgplaceholder:hover .billede-container {
-  visibility: visible;
-}
-
 

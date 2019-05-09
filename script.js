@@ -8,13 +8,12 @@ window.onbeforeunload = function() {
 window.addEventListener("resize", calculateSizes);
 
 function hideInfo() {
-
   document.querySelectorAll("#info-box").forEach(infobox => {
     infobox.classList.add("hidden");
   });
   VisInfo();
 }
-
+// json filen hentes og displayer vores  via vores dest i den 
 function loadJSON() {
   fetch(
     "https://www.jeanettemadsen.com/portfolie-timeline/wp-json/wp/v2/timeline?per=100"
@@ -27,7 +26,6 @@ function loadJSON() {
         console.log(obj);
 
         //clone the template
-
         const clone = document
           .querySelector("#info_template")
           .content.cloneNode(true);
@@ -38,18 +36,17 @@ function loadJSON() {
         console.log(`[data-svgplaceholder=${obj.acf.legi}]`);
 
         clone.querySelector("[data-field='title']").textContent = obj.acf.title;
-        clone.querySelector("[data-field='billede']").src = obj.acf.billede.url;
-        clone.querySelector("[data-field='link']").href = obj.acf.link;
         clone.querySelector("[data-field='langbeskrivelse']").textContent =
           obj.acf.langbeskrivelse;
-
+          clone.querySelector("[data-field='billede']").src = obj.acf.billede.url;
+        clone.querySelector("[data-field='link']").href = obj.acf.link;
+        
         dest.appendChild(clone);
       });
     });
 }
-
+// FIX THIS?! kan dette omskrives til en funktion med loope?1
 function VisInfo() {
-
   document
     .querySelector(`[data-svgplaceholder="emne-1"]`)
     .addEventListener("mousemove", e => {
@@ -149,7 +146,7 @@ function VisInfo() {
       gemInfo10();
     });
 }
-
+// FIX THIS. dette kan omskrives til en enkelt function med et loop?!
 function visInfo1() {
   document.querySelector("#emne-1 #info-box").classList.remove("hidden");
 }
@@ -219,6 +216,7 @@ function loadSVG() {
     .then(svgdata => {
       console.log("the SVG data is:");
       // console.log(svgdata);
+
       // vores svg omskrives til HTML der kan læses af DOM
       document
         .querySelector("#svg_timeline")

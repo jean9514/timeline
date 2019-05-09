@@ -1,89 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1000" viewBox="0 0 1400 1400">
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1000"  viewBox="0 0 1400 1400">
   <defs>
     <style>
-      .cls-1, .cls-10, .cls-11, .cls-12, .cls-13, .cls-14, .cls-4, .cls-6, .cls-7, .cls-8, .cls-9 {
-        fill: none;
-      }
-
-      .cls-1, .cls-10, .cls-11, .cls-12, .cls-13, .cls-15, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
-        stroke: #060305;
-      }
-
-      .cls-1, .cls-10, .cls-11, .cls-12, .cls-13, .cls-14, .cls-15, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
-        stroke-miterlimit: 10;
-      }
-
-      .cls-1 {
-        stroke-width: 2.8px;
-      }
-
-      .cls-2 {
-        fill: #f4d9ec;
-      }
-
-      .cls-2, .cls-3, .cls-5 {
-        stroke-width: 4px;
-      }
-
-      .cls-3 {
-        fill: #d4d4d4;
-      }
-
-      .cls-4 {
-        stroke-width: 3.4px;
-      }
-
-      .cls-5 {
-        fill: #f1d8eb;
-      }
-
-      .cls-6 {
-        stroke-width: 3.78px;
-      }
-
-      .cls-7 {
-        stroke-width: 3.42px;
-      }
-
-      .cls-8 {
-        stroke-width: 4.04px;
-      }
-
-      .cls-9 {
-        stroke-width: 3.97px;
-      }
-
-      .cls-10 {
-        stroke-width: 3.55px;
-      }
-
-      .cls-11 {
-        stroke-width: 4.5px;
-      }
-
-      .cls-12 {
-        stroke-width: 4.43px;
-      }
-
-      .cls-13 {
-        stroke-width: 3.98px;
-      }
-
-      .cls-14 {
-        stroke: #2f0d00;
-        stroke-width: 9px;
-      }
-
-      .cls-15 {
-        fill: #f8f5f6;
-        stroke-width: 2.03px;
-      }
-
-      .cls-16 {
-        font-size: 18.29px;
-        fill: #2f0d00;
-        font-family: MyriadPro-Regular, Myriad Pro;
-      }
+      
     </style>
   </defs>
   <title>timeline-linear</title>
@@ -94,6 +12,7 @@
       <polyline class="cls-1" points="781.38 294.76 701.48 216.97 626.38 210.29"/>
     </g>
   </g>
+
   <g id="emne-2">
    <path id="info-box" data-name="info-box" class="HTML_placeholder cls-5" d="M1104.57,292.66h238.11a0,0,0,0,1,0,0v99A14.43,14.43,0,0,1,1328.25,406H1119a14.43,14.43,0,0,1-14.43-14.43v-99A0,0,0,0,1,1104.57,292.66Z"/>
     <path id="overskrift" data-name="overskrift" class="HTML_placeholder cls-3" d="M1111.74,252h223.77a8.59,8.59,0,0,1,8.59,8.59v31.1a0,0,0,0,1,0,0H1103.15a0,0,0,0,1,0,0v-31.1A8.59,8.59,0,0,1,1111.74,252Z"/>
@@ -101,6 +20,7 @@
       <polyline class="cls-4" points="792.45 393.55 955.2 287.56 1103.15 275.93"/>
     </g>
   </g>
+
   <g id="emne-3">
    <path id="info-box" data-name="info-box" class="HTML_placeholder cls-5" d="M303.14,453.58H541.25a0,0,0,0,1,0,0v99A14.43,14.43,0,0,1,526.82,567H317.57a14.43,14.43,0,0,1-14.43-14.43v-99A0,0,0,0,1,303.14,453.58Z"/>
     <path id="overskrift" data-name="overskrift" class="HTML_placeholder cls-3" d="M310.31,411.81H534.08a8.59,8.59,0,0,1,8.59,8.59v31.1a0,0,0,0,1,0,0H301.72a0,0,0,0,1,0,0V420.4A8.59,8.59,0,0,1,310.31,411.81Z"/>
@@ -166,43 +86,43 @@
     <g id="Bullets">
       <g>
         <rect class="cls-15" x="764.21" y="1020.55" width="54.39" height="25.05" rx="2.88"/>
-        <text class="cls-16" transform="translate(772.88 1038.96)">1986</text>
+        <text class="cls-16" transform="translate(772.88 1038.96)"></text>
       </g>
       <g>
         <rect class="cls-15" x="764.21" y="916.05" width="54.39" height="25.05" rx="2.88"/>
-        <text class="cls-16" transform="translate(772.88 934.46)">1986</text>
+        <text class="cls-16" transform="translate(772.88 934.46)"></text>
       </g>
       <g>
         <rect class="cls-15" x="764.8" y="811.55" width="54.39" height="25.05" rx="2.88"/>
-        <text class="cls-16" transform="translate(773.47 829.96)">1986</text>
+        <text class="cls-16" transform="translate(773.47 829.96)"></text>
       </g>
       <g>
         <rect class="cls-15" x="764.96" y="707.05" width="54.39" height="25.05" rx="2.88"/>
-        <text class="cls-16" transform="translate(773.63 725.46)">1986</text>
+        <text class="cls-16" transform="translate(773.63 725.46)"></text>
       </g>
       <g>
         <rect class="cls-15" x="764.12" y="602.55" width="54.39" height="25.05" rx="2.88"/>
-        <text class="cls-16" transform="translate(772.79 620.96)">1986</text>
+        <text class="cls-16" transform="translate(772.79 620.96)"></text>
       </g>
       <g>
         <rect class="cls-15" x="763.8" y="498.05" width="54.39" height="25.05" rx="2.88"/>
-        <text class="cls-16" transform="translate(772.46 516.46)">1986</text>
+        <text class="cls-16" transform="translate(772.46 516.46)"></text>
       </g>
       <g>
         <rect class="cls-15" x="763.75" y="1125.05" width="54.39" height="25.05" rx="2.88"/>
-        <text class="cls-16" transform="translate(772.42 1143.45)">1986</text>
+        <text class="cls-16" transform="translate(772.42 1143.45)"></text>
       </g>
       <g>
         <rect class="cls-15" x="762.26" y="393.55" width="54.39" height="25.05" rx="2.88"/>
-        <text class="cls-16" transform="translate(770.93 411.96)">1986</text>
+        <text class="cls-16" transform="translate(770.93 411.96)"></text>
       </g>
       <g>
         <rect class="cls-15" x="763.8" y="1229.54" width="54.39" height="25.05" rx="2.88"/>
-        <text class="cls-16" transform="translate(772.46 1247.95)">1986</text>
+        <text class="cls-16" transform="translate(772.46 1247.95)"></text>
       </g>
       <g>
         <rect class="cls-15" x="764.12" y="289.05" width="54.39" height="25.05" rx="2.88"/>
-        <text class="cls-16" transform="translate(772.79 307.46)">1986</text>
+        <text class="cls-16" transform="translate(772.79 307.46)"></text>
       </g>
     </g>
   </g>
