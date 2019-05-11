@@ -135,6 +135,10 @@
   scroll-behavior: smooth;
 }
 
+.hidden {
+  display: none;
+}
+
 svg{
   width: 100%;
 }
@@ -142,12 +146,29 @@ svg{
 body {
   scroll-snap-type: y mandatory;
 }
-.hidden {
-  display: none;
+h1{
+  font-size: 1.2em;
 }
 
-h1 {
-  font-size: 1.2em;
+.cv{
+  text-align: center;
+}
+
+.cv a{
+  font-size: 19px;
+  
+}
+
+a{
+  color: #060305;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+color: red;
  
 }
 
@@ -220,26 +241,6 @@ h1 {
     grid-template-rows: repeat(2, 2fr);
   }
 }
-
-
-/* TODO: jeg kan ikke få dette til at virke. vil sætte en pulserende effect på titel containeren( den grå del) */
-/* puls effecten er fundet på : https://codepen.io/olam/pen/zcqea */
-/* der bør være en <span class> i html'en der hedder puls */
-/* 
-.pulse {
-  margin:100px;
-  display: block;
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  background: #cca92c;
-  cursor: pointer;
-  box-shadow: 0 0 0 rgba(204,169,44, 0.4);
-  animation: pulse 2s infinite;
-}
-.pulse:hover {
-  animation: none;
-} */
 
 .title-container {
   grid-area: title-container;
