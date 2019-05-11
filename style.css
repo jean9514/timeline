@@ -66,6 +66,7 @@
   cursor: pointer;
   z-index: 100;
   fill: #d4d4d4;
+
 }
 
 .cls-4 {
@@ -147,17 +148,9 @@ body {
 
 h1 {
   font-size: 1.2em;
+ 
 }
 
-.title-container h1{
-  margin-top:-2px;
-  
-}
-
-#titel{
-  text-align: center;
-
-}
 #top{
   scroll-snap-align: start;
   background-color: #708C64;
@@ -166,7 +159,7 @@ h1 {
  #svg_timeline{
   height: 83vh;
   width: 100vh;
-  margin-left: 17vw;
+  margin-left: 20vw;
   background-color: antiquewhite;
   outline: 3px solid#453135; 
   overflow: scroll;
@@ -229,9 +222,37 @@ h1 {
 }
 
 
+/* TODO: jeg kan ikke få dette til at virke. vil sætte en pulserende effect på titel containeren( den grå del) */
+/* puls effecten er fundet på : https://codepen.io/olam/pen/zcqea */
+/* der bør være en <span class> i html'en der hedder puls */
+/* 
+.pulse {
+  margin:100px;
+  display: block;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #cca92c;
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(204,169,44, 0.4);
+  animation: pulse 2s infinite;
+}
+.pulse:hover {
+  animation: none;
+} */
+
 .title-container {
   grid-area: title-container;
 
+}
+.title-container h1{
+  margin-top:-2px;
+  
+}
+
+#titel{
+  text-align: center;
+  
 }
 
 .billede-container {
