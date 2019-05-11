@@ -125,23 +125,68 @@
 }
 
 
+/* HTML */
+*{
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
+svg{
+  width: 100%;
+}
+
+body {
+  scroll-snap-type: y mandatory;
+}
 .hidden {
   display: none;
 }
 
-/* HTML */
 h1 {
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
+.title-container h1{
+  margin-top:-2px;
+  
+}
+
+#titel{
+  text-align: center;
+
+}
+#top{
+  scroll-snap-align: start;
+  background-color: #708C64;
+  height: 100%; 
+}
+ #svg_timeline{
+  height: 83vh;
+  width: 100vh;
+  margin-left: 17vw;
+  background-color: antiquewhite;
+  outline: 3px solid#453135; 
+  overflow: scroll;
+  overscroll-behavior: contain;
+  position: relative;
+  perspective: 2px;
+}
+
+
+#info_template{
+  position: relative;
+}
 .svgplaceholder {
   position: absolute;
-  margin-top: -3.5vw;
-  margin-left: 1vw;
+  margin-top: -7.5vw;
+  margin-left: -18vw;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "title-container title-container title-container title-container" "image-container image-container director-container director-container" "image-container image-container year-container year-container";
+  
 
   display: inline-block;
   padding: 2vw;
@@ -169,7 +214,7 @@ h1 {
 /* her vises indholdet af vores infoboxe */
 .svgplaceholder:hover .link-container,
 .svgplaceholder:hover .billede-container,
-.svgplaceholder .langbeskrivelse-container {
+.svgplaceholder:hover .langbeskrivelse-container {
   visibility: visible;
  
 }
@@ -183,21 +228,24 @@ h1 {
   }
 }
 
+
 .title-container {
   grid-area: title-container;
+
 }
 
 .billede-container {
   grid-area: image-container;
+  position: absolute;
+  top: 63px;
+  left:10px;
+ 
 }
 
-/* .billede-container img{
-  margin-right: 100px;
-} */
-/* .kortbeskrivelse-container {
-  grid-area: director-container;
-} */
-
+.billede-container img{
+  height: 25px;
+  width: auto;
+}
 .langbeskrivelse-container {
   grid-area: director-container;
 }

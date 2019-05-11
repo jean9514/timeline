@@ -45,7 +45,7 @@ function loadJSON() {
       });
     });
 }
-// FIX THIS?! kan dette omskrives til en funktion med loope?1
+// TODO FIX THIS?! kan dette omskrives til en funktion med loope?1
 function VisInfo() {
   document
     .querySelector(`[data-svgplaceholder="emne-1"]`)
